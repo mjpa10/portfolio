@@ -42,10 +42,6 @@ Bem-vindo ao meu portfólio! Este é um projeto pessoal desenvolvido com **Next.
 
 4. Abra o navegador e acesse [http://localhost:3000](http://localhost:3000)  
 
-## 🌍 Deploy  
-
-Este portfólio pode ser facilmente implantado na **Vercel**. Basta conectar o repositório ao Vercel e seguir os passos para a implantação contínua.  
-
 ## 📌 Contato  
 
 Caso queira entrar em contato comigo, me encontre em:  
