@@ -20,8 +20,8 @@ Bem-vindo ao meu portfólio! Este é um projeto pessoal desenvolvido com **Next.
 1. Clone este repositório:  
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/mjpa10/Portfolio.git
+   cd
    ```
 
 2. Instale as dependências:  
@@ -50,6 +50,6 @@ Este portfólio pode ser facilmente implantado na **Vercel**. Basta conectar o r
 
 Caso queira entrar em contato comigo, me encontre em:  
 
-📧 **E-mail:** [seuemail@email.com](mailto:seuemail@email.com)  
-💼 **LinkedIn:** [linkedin.com/in/seuperfil](https://linkedin.com/in/seuperfil)  
-🚀 **GitHub:** [github.com/seu-usuario](https://github.com/seu-usuario)  
+📧 **E-mail:** [m.theus.jose.pereira@gmail.com](mailto:m.theus.jose.pereira@gmail.com)  
+💼 **LinkedIn:** [Matheus José](https://www.linkedin.com/in/matheus-josee/)) 
+🚀 **GitHub:** [mjpa10](https://github.com/mjpa10)  
