@@ -21,7 +21,7 @@ Bem-vindo ao meu portfólio! Este é um projeto pessoal desenvolvido com **Next.
 
    ```bash
    git clone https://github.com/mjpa10/Portfolio.git
-   cd
+   cd Portfolio
    ```
 
 2. Instale as dependências:  
