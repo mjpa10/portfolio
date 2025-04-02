@@ -62,23 +62,17 @@ export const HeroSection = () => {
           <div className="bg-gray-950 border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full"/>
             <div className=" text-sm font-medium">
-              Avaliable for new projects
+            Aberto a novos projetos
             </div>
           </div>
         </div>
         <div className="flex items-center justify-center ">
         <div className="text-center max-w-lg ">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Building expecional user experiences
+          Criando experiências digitais impactantes
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat null a
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt i
-            culpa qui officia deserunt mollit anim id est laborum.
+          Transformando ideias em interfaces fluidas e inteligentes. Especializado em desenvolvimento full-stack, Machine Learning e IoT, com foco em inovação e performance.
           </p>
           </div>
         </div>
