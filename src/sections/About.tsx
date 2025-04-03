@@ -66,19 +66,19 @@ const hobbies = [
     top: "45%",
   },
   {
-    title: "Escutar musica",
+    title: "Musica",
     emoji: "🎶",
     left: "5%",
     top: "0%",
   },
   {
-    title: "estudar",
+    title: "Estudar",
     emoji: "📚",
     left: "5%",
     top: "45%",
   },
   {
-    title: "animais",
+    title: "Animais",
     emoji: "🐶",
     left: "50%",
     top: "68%",
@@ -146,10 +146,12 @@ export const AboutSection = () => {
             <Image src={Map} alt="map" 
             className="h-full w-full object-cover"
             />
-            <div className="absolute top-1/3 left-1/3
-            -translate-x-1/2 -translate-y-1/2 size-20">
+            <div className="absolute top-1/3 left-1/3 
+            -translate-x-1/2 -translate-y-1/2 size-20
+            flex items-center justify-center
+            rounded-full bg-gradient-to-r from-emerald-300 to bg-sky-400">
             <Image src={SmileEmoji} alt="me" 
-            className="size-20"/>
+            className="size-16 "/>
             </div>
           </Card>
         </div>
