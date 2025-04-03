@@ -1,6 +1,5 @@
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
-import StarIcon from '@/assets/icons/star.svg';
 import BookImage from "@/assets/images/book-cover.png"
 import Image from "next/image";
 import JavascriptIcon from "@/assets/icons/square-js.svg";
@@ -13,6 +12,7 @@ import { TechIcon } from "@/components/TechIcon";
 import Map from "@/assets/images/map.jpg";
 import SmileEmoji from "@/assets/images/SmileEmoji.png";
 import {CardHeader} from "@/components/CardHeader";
+import {ToolboxItems } from "@/components/ToolboxItems"
 
 
 const tollboxItems = [
@@ -90,19 +90,17 @@ export const AboutSection = () => {
           <Image src={BookImage} alt="book cover"/>
           </div>
         </Card>
-        <Card>
+        <Card className="h-[320px] p-0">
           <CardHeader
            title="My Tollbox" 
            description="EXplorre the technologies and tools i use to craft excepcional experiences"
+           className="px-6 pt-6"
            />
-          <div>
-            {tollboxItems.map(item => (
-              <div key={item.title}>
-                <TechIcon component={item.iconType}/>
-                <span>{item.title}</span>
-              </div>
-            ))}
-          </div>         
+            <ToolboxItems  items={tollboxItems} className="mt-6"/>
+            <ToolboxItems 
+            items={tollboxItems} 
+            className="mt-6"
+            itemsWrapperClassName="-translate-x-1/2"/>
         </Card>
           <Card>
           <CardHeader
