@@ -51,17 +51,24 @@ export const HeroSection = () => {
         <div className="size-2 rounded-full bg-emerald-300/20"/>
       </HeroOrbit>
       <HeroOrbit size={650}rotation={-5}>
-        <div className="size-2 rounded-full bg-emerald-300/20"/>
+        <div className="size-2 rounded-full bg-emerald-300/20 "/>
       </HeroOrbit>
       </div>
 
 
       <div className="container">
         <div className="flex flex-col items-center">
-          <Image src={matheusImage} className="size-[150px]" alt="me" />
+          <Image 
+          src={matheusImage} 
+          className="size-[150px]" 
+          alt="me" 
+          />
           <div className="bg-gray-950 border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
-            <div className="bg-green-500 size-2.5 rounded-full"/>
-            <div className=" text-sm font-medium">
+            <div className="relative">
+            <div  className="bg-green-500 size-2.5 rounded-full relative"/>
+            <div className="bg-green-500 absolute inset-0 rounded-full animate-ping"></div>
+            </div>
+             <div className=" text-sm font-medium">
             Aberto a novos projetos
             </div>
           </div>

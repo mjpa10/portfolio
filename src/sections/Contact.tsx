@@ -22,8 +22,8 @@ export const ContactSection = () => {
                 Vamos Criar algo incrivel juntos
               </h2>
               <p className="text-sm mt-2 md:text-base">
-                read to bring your next project to life? lets connect and
-                discuss how i can help tou achieve your goals
+              Precisa de um desenvolvedor Fullstack com experiência?
+               Entre em contato e vamos discutir como posso contribuir para o seu projeto!
               </p>
             </div>
             <div>
