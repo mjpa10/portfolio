@@ -69,8 +69,8 @@ const hobbies = [
   {
     title: "Jogar",
     emoji: "🎮",
-    left: "4%",
-    top: "70%",
+    left: "50%",
+    top: "68%",
   },
   {
     title: "Treinar",
@@ -105,8 +105,8 @@ const hobbies = [
   {
     title: "Animais",
     emoji: "🐶",
-    left: "50%",
-    top: "68%",
+    left: "4%",
+    top: "70%",
   },
 ];
 export const AboutSection = () => {
