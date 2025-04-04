@@ -94,6 +94,7 @@ export const AboutSection = () => {
           description="Aprenda mais sobre quem eu sou,o que faço e o que me inspira "
         />
         <div className="mt-20 flex flex-col gap-8">
+          
           <Card className="h-[320px]">
             <CardHeader
               title="My Reads"
@@ -144,11 +145,15 @@ export const AboutSection = () => {
           </Card>
           <Card className="h-[320px] p-0 relative">
             <Image src={Map} alt="map" 
-            className="h-full w-full object-cover"
+            className="
+            h-full w-full object-cover
+            "
             />
             <div className="absolute top-1/3 left-1/3 
             -translate-x-1/2 -translate-y-1/2 size-20
-            flex items-center justify-center
+            flex items-center justify-center after:content-[''] after:absolute after:inset-0
+            after:outline after:outline-2 after:-outline-offset-2 after:rounded-full
+            after:outline-gray-950/30
             rounded-full bg-gradient-to-r from-emerald-300 to bg-sky-400">
             <Image src={SmileEmoji} alt="me" 
             className="size-16 "/>
