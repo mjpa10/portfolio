@@ -84,6 +84,7 @@ const hobbies = [
     top: "68%",
   },
 ];
+/* linha 98 */
 export const AboutSection = () => {
   return (
     <div className="py-20">
@@ -94,30 +95,32 @@ export const AboutSection = () => {
           description="Aprenda mais sobre quem eu sou,o que faço e o que me inspira "
         />
         <div className="mt-20 flex flex-col gap-8">
-          
-          <Card className="h-[320px]">
+      <div className="grid md:grid-cols-5 grid-cols-1 gap-8">
+          <Card className="h-[320px] md:col-span-2">
             <CardHeader
               title="My Reads"
               description="explore the books shaping my perpectives"
             />
-            <div className="w-40 mx-auto mt-8">
+            <div className="w-40 mx-auto mt-2 md:mt-0">
               <Image src={BookImage} alt="book cover" />
             </div>
           </Card>
-          <Card className="h-[320px] p-0">
+          <Card className="h-[320px] md:col-span-3">
             <CardHeader
               title="My Tollbox"
               description="EXplorre the technologies and tools i use to craft excepcional experiences"
-              className="px-6 pt-6"
+              className=""
             />
-            <ToolboxItems items={tollboxItems} className="mt-6" />
+            <ToolboxItems items={tollboxItems} className="" />
             <ToolboxItems
               items={tollboxItems}
               className="mt-6"
               itemsWrapperClassName="-translate-x-1/2"
             />
           </Card>
-          <Card className="h-[320px] p-0 flex-col flex">
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <Card className="h-[320px] p-0 flex-col flex col-span-3">
             <CardHeader
               title="Beyond the code"
               description="Explore myn interets and hobbies beyonde the"
@@ -143,7 +146,7 @@ export const AboutSection = () => {
               ))}
             </div>
           </Card>
-          <Card className="h-[320px] p-0 relative">
+          <Card className="h-[320px] p-0 relative col-span-2">
             <Image src={Map} alt="map" 
             className="
             h-full w-full object-cover
@@ -159,6 +162,7 @@ export const AboutSection = () => {
             className="size-16 "/>
             </div>
           </Card>
+          </div>
         </div>
       </div>
     </div>
