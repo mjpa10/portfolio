@@ -19,7 +19,7 @@ const footerLinks = [
     href: "mailto:m.theus.jose.pereira@gmail.com",
   },
   {
-    title: "Baixe meu CV",
+    title: "Curriculo",
     href: "",
   },
 ];
@@ -33,13 +33,13 @@ export const Footer = () => {
       <div className="container">
         <div 
         className="border-t border-white/15 py-6 text-sm flex flex-col
-         items-center gap-8"
+         md:flex-row items-center md:justify-between gap-8"
          >
           <div 
           className="text-white/40"
           >&copy; 2025, Todos os direitos reservados.
           </div>  
-        <nav className="flex flex-col items-center gap-8">
+        <nav className="flex flex-col md:flex-row items-center gap-8">
           {footerLinks.map((link) => (
             <a
               href={link.href}
