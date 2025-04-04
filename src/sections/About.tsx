@@ -1,6 +1,6 @@
+'use client';
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
-import BookImage from "@/assets/images/book-cover.png";
 import Image from "next/image";
 import JavascriptIcon from "@/assets/icons/square-js.svg";
 import HTMLIcon from "@/assets/icons/html5.svg";
@@ -17,6 +17,8 @@ import VueIcon from "@/assets/icons/vue-svgrepo-com.svg";
 import NetIcon from "@/assets/icons/NET core.svg";
 import DockerIcon from "@/assets/icons/docker-ar21.svg";
 import MySqlIcon from "@/assets/icons/mysql-logo-svgrepo-com.svg";
+import {motion} from "framer-motion";
+import { useRef } from "react";
 
 const toolboxItems  = [
   {
@@ -110,6 +112,7 @@ const hobbies = [
   },
 ];
 export const AboutSection = () => {
+  const constrainRef = useRef(null);
   return (
     <div className="py-20 lg:py-28">
       <div className="container">
@@ -158,9 +161,9 @@ export const AboutSection = () => {
               description="Mais do que tecnologia: minhas paixões, hobbies e o que me inspira no dia a dia."
               className="px-6 py-6"
             />
-            <div className="relative flex-1 ">
-              {hobbies.map((hobby) => (
-                <div
+            <div className="relative flex-1" ref={constrainRef}>
+              {hobbies.map((hobby) => (               
+                <motion.div
                   key={hobby.title}
                   className="inline-flex gap-2 px-6 items-center
               bg-gradient-to-r from-emerald-300 to-sky-400 
@@ -169,12 +172,15 @@ export const AboutSection = () => {
                 left: hobby.left,
                 top: hobby.top,
               }}
+                drag
+                dragConstraints={constrainRef}
                 >
                   <span className="font-medium text-gray-950">
                     {hobby.title}
                   </span>
                   <span>{hobby.emoji}</span>
-                </div>
+                </motion.div>
+                
               ))}
             </div>
           </Card>
@@ -190,6 +196,12 @@ export const AboutSection = () => {
             after:outline after:outline-2 after:-outline-offset-2 after:rounded-full
             after:outline-gray-950/30
             rounded-full bg-gradient-to-r from-emerald-300 to bg-sky-400">
+            <div 
+            className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to bg-sky-400
+              -z-20 animate-ping [animation-duration:2s]"></div>
+            <div 
+            className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to bg-sky-400
+              -z-10"></div>
             <Image src={SmileEmoji} alt="me" 
             className="size-16 "/>
             </div>
