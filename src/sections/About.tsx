@@ -87,7 +87,7 @@ const hobbies = [
 /* linha 98 */
 export const AboutSection = () => {
   return (
-    <div className="py-20">
+    <div className="py-20 lg:py-28">
       <div className="container">
         <SectionHeader
           eyebrow="Sobre mim"
@@ -95,8 +95,8 @@ export const AboutSection = () => {
           description="Aprenda mais sobre quem eu sou,o que faço e o que me inspira "
         />
         <div className="mt-20 flex flex-col gap-8">
-      <div className="grid md:grid-cols-5 grid-cols-1 gap-8">
-          <Card className="h-[320px] md:col-span-2">
+      <div className="grid md:grid-cols-5 grid-cols-1 gap-8 lg:grid-cols-3">
+          <Card className="h-[320px] md:col-span-2 lg:col-span-1">
             <CardHeader
               title="My Reads"
               description="explore the books shaping my perpectives"
@@ -105,7 +105,7 @@ export const AboutSection = () => {
               <Image src={BookImage} alt="book cover" />
             </div>
           </Card>
-          <Card className="h-[320px] md:col-span-3">
+          <Card className="h-[320px] md:col-span-3 lg:col-span-2">
             <CardHeader
               title="My Tollbox"
               description="EXplorre the technologies and tools i use to craft excepcional experiences"
@@ -119,8 +119,8 @@ export const AboutSection = () => {
             />
           </Card>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-          <Card className="h-[320px] p-0 flex-col flex col-span-3">
+          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
+          <Card className="h-[320px] p-0 flex-col flex md:col-span-3 lg:col-span-2">
             <CardHeader
               title="Beyond the code"
               description="Explore myn interets and hobbies beyonde the"
@@ -146,7 +146,7 @@ export const AboutSection = () => {
               ))}
             </div>
           </Card>
-          <Card className="h-[320px] p-0 relative col-span-2">
+          <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
             <Image src={Map} alt="map" 
             className="
             h-full w-full object-cover
