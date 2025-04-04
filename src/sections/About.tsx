@@ -18,7 +18,7 @@ import NetIcon from "@/assets/icons/NET core.svg";
 import DockerIcon from "@/assets/icons/docker-ar21.svg";
 import MySqlIcon from "@/assets/icons/mysql-logo-svgrepo-com.svg";
 
-const tollboxItems = [
+const toolboxItems  = [
   {
     title: "C Sharp",
     iconType: cSharpIcon,
@@ -139,11 +139,15 @@ export const AboutSection = () => {
               className="lg:pb-1 items-center "
               descriptionClassName=" md:max-w-none md:gap-4 md:py-3"
             />
-            <ToolboxItems items={tollboxItems} className="" />
+            <ToolboxItems 
+            items={toolboxItems } 
+            className=""
+            itemsWrapperClassName="animate-move-left [animation-duration:30s]" 
+             />
             <ToolboxItems
-              items={tollboxItems}
+              items={toolboxItems }
               className="mt-6"
-              itemsWrapperClassName="-translate-x-1/2"
+              itemsWrapperClassName="animate-move-right [animation-duration:15s]"
             />
           </Card>
           </div>
