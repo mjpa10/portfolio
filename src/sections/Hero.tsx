@@ -133,18 +133,20 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-10"
-          onClick={() => document.getElementById("projetos")?.scrollIntoView({ behavior: "smooth" })}
+          <a 
+          href="#projetos"
+          className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-10"
           >
             <span className="font-semibold">Confira meu trabalho</span>
             <ArroDowm className="size-4" />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-10"
-          onClick={() => document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" })}
+          </a>
+          <a 
+          href="#contato"
+          className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-10"
           >
             <span>👋</span>
             <span className="font-semibold">Entre em contato</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>
