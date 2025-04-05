@@ -50,7 +50,6 @@ export const Footer = () => {
               download={link.download || undefined} 
               className="inline-flex  items-center gap-1.5 relative z-10"
             >
-              <a href="/public/curriculo-matheus.pdf"></a>
               <span className="font-semibold">{link.title}</span>
               <ArrowUpRightIcon className="size-4"/>
             </a>
