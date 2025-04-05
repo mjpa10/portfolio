@@ -20,7 +20,8 @@ const footerLinks = [
   },
   {
     title: "Curriculo",
-    href: "",
+    href: "/curriculo-matheus.pdf",
+    download: true,
   },
 ];
 
@@ -43,11 +44,13 @@ export const Footer = () => {
           {footerLinks.map((link) => (
             <a
               href={link.href}
-              key={link.title}
+              key={link.title}             
               target="_blank"
               rel="noopener noreferrer"
+              download={link.download || undefined} 
               className="inline-flex  items-center gap-1.5 relative z-10"
             >
+              <a href="/public/curriculo-matheus.pdf"></a>
               <span className="font-semibold">{link.title}</span>
               <ArrowUpRightIcon className="size-4"/>
             </a>
