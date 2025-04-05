@@ -26,8 +26,8 @@ const footerLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="relative -z-10 overflow-x-clip">
-      <div className="absolute h-[400px] w-[1600px] bottom-0 left-1/2
+    <footer className="lg:pt-26 md:pt-20 relative z-10 overflow-x-clip">
+      <div className="absolute h-[300px] w-[1600px] bottom-0 left-1/2
       -translate-x-1/2 bg-emerald-300/30 -z-10
       [mask-image:radial-gradient(50%_50%_at_bottom_center,black,transparent)] "></div>
       <div className="container">
@@ -46,7 +46,7 @@ export const Footer = () => {
               key={link.title}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex  items-center gap-1.5"
+              className="inline-flex  items-center gap-1.5 relative z-10"
             >
               <span className="font-semibold">{link.title}</span>
               <ArrowUpRightIcon className="size-4"/>
