@@ -1,3 +1,4 @@
+"use client"
 import matheusImage from "@/assets/images/perfil-matheus.png";
 import Image from "next/image";
 import ArroDowm from "@/assets/icons/arrow-down.svg";
@@ -9,7 +10,8 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-55 relative z-0 overflow-x-clip">
+    <section id="inicial">
+    <div className="py-32 md:py-48 lg:py-55 relative z-0 overflow-x-clip" >
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -131,16 +133,21 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-10"
+          onClick={() => document.getElementById("projetos")?.scrollIntoView({ behavior: "smooth" })}
+          >
             <span className="font-semibold">Confira meu trabalho</span>
             <ArroDowm className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-10"
+          onClick={() => document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" })}
+          >
             <span>👋</span>
             <span className="font-semibold">Entre em contato</span>
           </button>
         </div>
       </div>
     </div>
+    </section>
   );
 };

@@ -51,7 +51,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-20 lg:py-24">
+    <section className="pb-20 lg:py-24 pt-16" id="projetos">
       <div className="container">
         <SectionHeader
           eyebrow="Resultados do Mundo Real"
