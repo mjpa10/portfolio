@@ -20,7 +20,7 @@ export const ContactSection = () => {
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
             <div>
               <h2 className="font-serif text-2xl md:text-3xl">
-                Vamos Criar algo incrivel juntos
+                Vamos criar algo incrivel juntos?
               </h2>
               <p className="text-sm mt-2 md:text-base">
               Precisa de um desenvolvedor Fullstack com experiência?
