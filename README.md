@@ -10,7 +10,6 @@ Bem-vindo ao meu portfólio! Este é um projeto pessoal desenvolvido com **Next.
 
 ## 🎨 Recursos  
 
-- 🌙 **Modo escuro** – Alternância entre temas claro e escuro.  
 - 🎬 **Animações modernas** – Transições suaves usando Framer Motion.  
 - 📱 **Responsivo** – Adaptado para diferentes tamanhos de tela.  
 - ⚡ **Desempenho otimizado** – Implementação de boas práticas para carregamento rápido.  
